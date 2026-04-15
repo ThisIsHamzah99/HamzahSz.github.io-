@@ -1,82 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hamzah Zuhrah | Cybersecurity Portfolio</title>
   <style>
     body {
-      font-family: Arial;
-      background-color: #0b1020;
-      color: white;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #081120;
+      color: #f5f7fa;
+      line-height: 1.6;
     }
+
     header {
+      background-color: #0d1830;
       text-align: center;
-      padding: 40px;
-      background-color: #11162a;
+      padding: 50px 20px;
+      border-bottom: 1px solid #1d2b45;
     }
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
     }
+
+    header p {
+      margin-top: 12px;
+      font-size: 20px;
+      color: #c8d3e0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px 50px;
+    }
+
     .card {
-      background: #151b31;
+      background-color: #101b34;
+      border: 1px solid #1f2f4f;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 30px;
+      color: #ffffff;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      color: #dce7f5;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background-color: #1a2844;
+      color: #dbe7f7;
+      padding: 8px 12px;
+      margin: 6px 6px 0 0;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #8fc7ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .project {
+      margin-bottom: 22px;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: #9fb0c6;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+      font-size: 14px;
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Hamzah Zuhrah</h1>
-  <p>Cybersecurity Student | Kali Linux | Security+ in Progress</p>
-</header>
+  <header>
+    <h1>Hamzah Zuhrah</h1>
+    <p>Cybersecurity Student | Kali Linux | CompTIA Security+ in Progress</p>
+  </header>
 
-<section>
+  <div class="container">
 
-<div class="card">
-<h2>About Me</h2>
-<p>
-Cybersecurity student at Old Dominion University with hands-on experience in Kali Linux,
-network security, and cybersecurity labs. Currently pursuing CompTIA Security+ and building
-real-world skills in ethical hacking and system security.
-</p>
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a cybersecurity student at Old Dominion University with hands-on experience in Kali Linux,
+        networking, Linux administration, and security-focused lab work. I am currently building my technical
+        skills through practical assignments, lab simulations, and an in-progress Secure File Transfer System project.
+        I am also working toward earning the CompTIA Security+ certification.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <span class="tag">Kali Linux</span>
+      <span class="tag">Linux Command Line</span>
+      <span class="tag">Nmap</span>
+      <span class="tag">Networking Fundamentals</span>
+      <span class="tag">Network Security</span>
+      <span class="tag">System Administration</span>
+      <span class="tag">Shell Scripting</span>
+      <span class="tag">User & Group Management</span>
+      <span class="tag">File Permissions</span>
+      <span class="tag">Task Automation</span>
+      <span class="tag">Security Concepts</span>
+      <span class="tag">Virtual Machine Labs</span>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Secure File Transfer System (In Progress)</h3>
+        <p>
+          Developing a security-focused file transfer project designed to support safe file movement between systems
+          while protecting confidentiality and integrity. This project is helping me strengthen my understanding of
+          secure communication, authentication, encryption concepts, and secure file handling.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Kali Linux Security and Administration Labs</h3>
+        <p>
+          Completed a series of Kali Linux assignments focused on command-line navigation, user and group management,
+          password security concepts, file permissions, storage management, shell scripting, automation, and basic
+          network configuration. These labs helped build practical Linux and cybersecurity skills in a hands-on environment.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Networking and Infrastructure Virtual Labs</h3>
+        <p>
+          Completed multiple live virtual machine and network simulation labs covering IP addressing, routing,
+          topologies, protocols, packet analysis, network architecture, and network security. These labs strengthened
+          my foundation in enterprise networking and defensive security concepts.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Hands-On Labs</h2>
+
+      <h3>Networking and Infrastructure Labs</h3>
+      <ul>
+        <li>Configured networking settings on a Windows device in a live virtual machine environment.</li>
+        <li>Studied networking topologies and architecture.</li>
+        <li>Worked with network protocols and router-based communication.</li>
+        <li>Practiced IP addressing and physical star topology design.</li>
+        <li>Examined packet contents and network reference models and standards.</li>
+      </ul>
+
+      <h3>Network Security Labs</h3>
+      <ul>
+        <li>Explored foundational network security concepts.</li>
+        <li>Analyzed general network attacks in lab environments.</li>
+        <li>Applied network hardening techniques to improve system security.</li>
+      </ul>
+
+      <h3>Kali Linux Assignments</h3>
+      <ul>
+        <li>Working with Command Line</li>
+        <li>Working with vi Editor</li>
+        <li>Group and User Management</li>
+        <li>Password Cracking</li>
+        <li>File Permissions</li>
+        <li>Storage Management</li>
+        <li>Shell Script</li>
+        <li>Task Automation</li>
+        <li>Networking Basics</li>
+        <li>Basic Network Configuration</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Selected Lab Experience</h2>
+      <ul>
+        <li>Live Virtual Machine Lab 1-1: Configuring Networking Settings on a Windows Device</li>
+        <li>Live Virtual Machine Lab 3-1: Networking Topologies and Architecture</li>
+        <li>Live Virtual Machine Lab 5-1: Network Protocols</li>
+        <li>Network Simulation 5-1: Communicating Across a Router</li>
+        <li>Live Virtual Machine Lab 6-1: IP Addressing</li>
+        <li>Network Simulation 6-1: Building a Physical Star Topology</li>
+        <li>Live Virtual Machine Lab 7-1: Network Reference Models and Standards</li>
+        <li>Network Simulation 7-1: Examining the Contents of a Packet</li>
+        <li>Live Virtual Machine Lab 9-1: Network Security Concepts</li>
+        <li>Live Virtual Machine Lab 9-2: General Network Attacks</li>
+        <li>Live Virtual Machine Lab 9-3: Network Hardening Techniques</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Certifications</h2>
+      <p><strong>CompTIA Security+ (SY0-701)</strong> — In Progress</p>
+    </div>
+
+   <div class="card">
+  <h2>Contact</h2>
+
+  <p>Email: <a href="mailto:hzuhr001@odu.edu">hzuhr001@odu.edu</a></p>
+
+  <p>GitHub: 
+    <a href="https://github.com/ThisIsHamzah99" target="_blank">
+      github.com/ThisIsHamzah99
+    </a>
+  </p>
+
+  <p>LinkedIn: 
+    <a href="https://www.linkedin.com/in/hamzah-z-15b55317b/" target="_blank">
+      linkedin.com/in/hamzah-z-15b55317b
+    </a>
+  </p>
+
 </div>
 
-<div class="card">
-<h2>Skills</h2>
-<ul>
-<li>Kali Linux</li>
-<li>Nmap</li>
-<li>Wireshark</li>
-<li>Linux Command Line</li>
-<li>Network Security</li>
-</ul>
-</div>
+  </div>
 
-<div class="card">
-<h2>Projects</h2>
-<ul>
-<li>Kali Linux Lab Work</li>
-<li>Network Scanning with Nmap</li>
-<li>Cybersecurity Assignments</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Certifications</h2>
-<p>CompTIA Security+ (In Progress)</p>
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p>Email: your-email@example.com</p>
-</div>
-
-</section>
+  <footer>
+    © 2026 Hamzah Zuhrah | Cybersecurity Portfolio
+  </footer>
 
 </body>
 </html>
