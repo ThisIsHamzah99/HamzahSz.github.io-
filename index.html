@@ -1,4 +1,4 @@
-i<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -89,17 +89,17 @@ i<!DOCTYPE html>
       gap: 12px;
     }
 
-   .hero-links a {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.03);
-  color: var(--text);
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  transition: 0.2s ease;
-}
+    .hero-links a {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      transition: 0.2s ease;
+    }
 
     .hero-links a:hover {
       background: var(--accent-soft);
@@ -158,6 +158,12 @@ i<!DOCTYPE html>
       border-radius: var(--radius);
       padding: 28px;
       box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.35);
     }
 
     .card h2 {
@@ -191,14 +197,22 @@ i<!DOCTYPE html>
       font-size: 0.95rem;
     }
 
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
     .project {
-      padding: 18px 0;
-      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 20px;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.02);
+      margin: 0;
     }
 
     .project:first-of-type {
-      border-top: 0;
-      padding-top: 0;
+      padding-top: 20px;
     }
 
     .project-title {
@@ -208,29 +222,6 @@ i<!DOCTYPE html>
       gap: 12px;
       flex-wrap: wrap;
     }
-    .projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-}
-
-.project {
-  padding: 20px;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  background: rgba(255,255,255,0.02);
-  margin: 0;
-}
-
-.project:first-of-type {
-  padding-top: 20px;
-}
-
-@media (min-width: 900px) {
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
     .project-title h3 {
       margin: 0;
@@ -265,8 +256,13 @@ i<!DOCTYPE html>
       margin-top: 18px;
     }
 
-    .screenshot-block p {
-      margin: 0 0 10px;
+    .screenshot-block + .screenshot-block {
+      margin-top: 26px;
+    }
+
+    .screenshot-block p:first-child {
+      font-size: 1.02rem;
+      margin-bottom: 10px;
       font-weight: bold;
     }
 
@@ -275,6 +271,7 @@ i<!DOCTYPE html>
       border-radius: 14px;
       overflow: hidden;
       background: rgba(255,255,255,0.02);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
     }
 
     .screenshot-frame img {
@@ -284,6 +281,41 @@ i<!DOCTYPE html>
 
     .cert-line {
       font-size: 1.05rem;
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .project-button,
+    .resume-button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.03);
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .project-button:hover,
+    .resume-button:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
     }
 
     footer {
@@ -298,69 +330,44 @@ i<!DOCTYPE html>
         grid-template-columns: 1fr 1fr;
       }
     }
-    .project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 14px;
-}
 
-.project-button {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,0.03);
-  color: var(--text);
-  font-size: 0.95rem;
-  transition: 0.2s ease;
-}
-
-.project-button:hover {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  text-decoration: none;
-  transform: translateY(-1px);
-}
-    .card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
-}
+    @media (min-width: 900px) {
+      .projects-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   </style>
 </head>
 <body>
 
- <header id="top">
-  <div class="container hero">
-    <div class="hero-top">
-      <div style="display:flex; align-items:center; gap:24px; flex-wrap:wrap;">
-<img src="profile.jpg" alt="Hamzah Zuhrah profile photo" style="width:130px; height:130px; object-fit:cover; object-position:center; border-radius:50%; border:3px solid rgba(77,181,255,0.35); box-shadow:0 10px 24px rgba(0,0,0,0.28); background:#0d1b33;">
-        <div class="name-block">
-  <h1>Hamzah Zuhrah</h1>
-  <p class="subtitle">Cybersecurity Student | Kali Linux | CompTIA Security+ in Progress</p>
-  <p class="muted" style="margin-top:10px; max-width:560px;">
-    Interested in cybersecurity, Linux-based system security, and practical security projects that strengthen real-world technical skills.
-  </p>
-</div>
-      </div>
+  <header id="top">
+    <div class="container hero">
+      <div class="hero-top">
+        <div style="display:flex; align-items:center; gap:24px; flex-wrap:wrap;">
+          <img src="profile.jpg" alt="Hamzah Zuhrah profile photo" style="width:130px; height:130px; object-fit:cover; object-position:center; border-radius:50%; border:3px solid rgba(77,181,255,0.35); box-shadow:0 10px 24px rgba(0,0,0,0.28); background:#0d1b33;">
 
-      <div class="hero-links">
-        <a href="mailto:hzuhr001@odu.edu">Email</a>
-        <a href="https://github.com/ThisIsHamzah99" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/hamzah-z-15b55317b/" target="_blank">LinkedIn</a>
-      </div>
-    </div>
+          <div class="name-block">
+            <h1>Hamzah Zuhrah</h1>
+            <p class="subtitle">Cybersecurity Student | Kali Linux | CompTIA Security+ in Progress</p>
+            <p class="muted" style="margin-top:10px; max-width:560px;">
+              Interested in cybersecurity, Linux-based system security, and practical security projects that strengthen real-world technical skills.
+            </p>
+          </div>
+        </div>
 
+        <div class="hero-links">
+          <a href="mailto:hzuhr001@odu.edu">Email</a>
+          <a href="https://github.com/ThisIsHamzah99" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/hamzah-z-15b55317b/" target="_blank">LinkedIn</a>
+          <a href="resume.pdf" target="_blank">Resume</a>
+        </div>
+      </div>
 
       <p class="hero-summary">
-  Cybersecurity student at Old Dominion University with hands-on experience in Kali Linux, Linux administration,
-  networking, access control, and technical lab documentation. Focused on building practical security skills through
-  system configuration, command-line work, and project-based learning, including a developing Secure File Transfer System.
-</p>
+        Cybersecurity student at Old Dominion University with hands-on experience in Kali Linux, Linux administration,
+        networking, access control, and technical lab documentation. Focused on building practical security skills through
+        system configuration, command-line work, and project-based learning, including a developing Secure File Transfer System.
+      </p>
     </div>
   </header>
 
@@ -368,6 +375,7 @@ i<!DOCTYPE html>
     <div class="nav-inner">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
+      <a href="#learning">Currently Learning</a>
       <a href="#projects">Projects</a>
       <a href="#labs">Hands-On Labs</a>
       <a href="#evidence">Technical Evidence</a>
@@ -407,67 +415,71 @@ i<!DOCTYPE html>
           <span class="tag">Technical Documentation</span>
         </div>
       </section>
-      <section class="card">
-  <h2>Currently Learning</h2>
-  <ul>
-    <li>CompTIA Security+ (SY0-701)</li>
-    <li>Linux system administration and file permissions</li>
-    <li>Secure file transfer and authentication concepts</li>
-    <li>Networking protocols and security fundamentals</li>
-  </ul>
-</section>
+
+      <section class="card" id="learning">
+        <h2>Currently Learning</h2>
+        <ul>
+          <li>CompTIA Security+ (SY0-701)</li>
+          <li>Linux system administration and file permissions</li>
+          <li>Secure file transfer and authentication concepts</li>
+          <li>Networking protocols and security fundamentals</li>
+        </ul>
+      </section>
 
       <section class="card" id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
 
-       <div class="project">
-  <div class="project-title">
-    <h3>🔐 Secure File Transfer System</h3>
-<span class="project-status">🚧 In Progress</span>  </div>
+          <div class="project">
+            <div class="project-title">
+              <h3>🔐 Secure File Transfer System</h3>
+              <span class="project-status">🚧 In Progress</span>
+            </div>
 
-  <p class="muted">
-    Designing and implementing a secure file transfer system that ensures data confidentiality, integrity, and authentication using encryption techniques.
-  </p>
+            <p class="muted">
+              Designing and implementing a secure file transfer system that ensures data confidentiality, integrity, and authentication using encryption techniques.
+            </p>
 
-  <ul>
-    <li>Implementing encryption for secure data transmission</li>
-    <li>Applying authentication mechanisms to verify users</li>
-    <li>Preventing unauthorized access and data interception</li>
-    <li>Using Linux-based tools and scripting for automation</li>
-  </ul>
+            <ul>
+              <li>Implementing encryption for secure data transmission</li>
+              <li>Applying authentication mechanisms to verify users</li>
+              <li>Preventing unauthorized access and data interception</li>
+              <li>Using Linux-based tools and scripting for automation</li>
+            </ul>
 
-  <p>
-    <strong>Tech Used:</strong> Linux, Bash, Networking Concepts, Cryptography Basics
-  </p>
-         <div class="project-links">
-  <a class="project-button" href="https://github.com/ThisIsHamzah99" target="_blank">GitHub Profile</a>
-  <a class="project-button" href="#" target="_blank">Project Repo (Coming Soon)</a>
-</div>
-</div>
+            <p>
+              <strong>Tech Used:</strong> Linux, Bash, Networking Concepts, Cryptography Basics
+            </p>
 
-        <<div class="project">
-  <div class="project-title">
-    <h3>🐧 Kali Linux Security and Administration Labs</h3>
-  </div>
-  <p class="muted">
-    Completed hands-on Linux assignments focused on command-line usage, user and group management,
-    password tasks, file permissions, storage management, shell scripting, and automation.
-  </p>
-  <p><strong>Focus Areas:</strong> Linux Administration, Permissions, Shell Scripting, System Configuration</p>
-</div>
-
-        <div class="project">
-  <div class="project-title">
-    <h3>🌐 Networking and Infrastructure Virtual Labs</h3>
-  </div>
-  <p class="muted">
-    Completed virtual machine and network simulation labs covering networking topologies, protocols,
-    IP addressing, routing, packet analysis, and foundational network security concepts.
-  </p>
-  <p><strong>Focus Areas:</strong> Networking Fundamentals, Protocols, Routing, Packet Analysis, Network Security</p>
-</div>
+            <div class="project-links">
+              <a class="project-button" href="https://github.com/ThisIsHamzah99" target="_blank">GitHub Profile</a>
+              <a class="project-button" href="#" target="_blank">Project Repo (Coming Soon)</a>
+            </div>
           </div>
+
+          <div class="project">
+            <div class="project-title">
+              <h3>🐧 Kali Linux Security and Administration Labs</h3>
+            </div>
+            <p class="muted">
+              Completed hands-on Linux assignments focused on command-line usage, user and group management,
+              password tasks, file permissions, storage management, shell scripting, and automation.
+            </p>
+            <p><strong>Focus Areas:</strong> Linux Administration, Permissions, Shell Scripting, System Configuration</p>
+          </div>
+
+          <div class="project">
+            <div class="project-title">
+              <h3>🌐 Networking and Infrastructure Virtual Labs</h3>
+            </div>
+            <p class="muted">
+              Completed virtual machine and network simulation labs covering networking topologies, protocols,
+              IP addressing, routing, packet analysis, and foundational network security concepts.
+            </p>
+            <p><strong>Focus Areas:</strong> Networking Fundamentals, Protocols, Routing, Packet Analysis, Network Security</p>
+          </div>
+
+        </div>
       </section>
 
       <section class="card" id="labs">
@@ -534,41 +546,42 @@ i<!DOCTYPE html>
         <h2>Lab Screenshots</h2>
 
         <div class="screenshot-block">
-<p><strong>Command-Line Account Inspection</strong></p>  
+          <p><strong>Command-Line Account Inspection</strong></p>
           <div class="screenshot-frame">
             <img src="kali-terminal.png" alt="Kali Linux Terminal showing user command execution">
           </div>
           <p class="muted" style="margin-top:10px;">
-    Example of Linux command-line usage to inspect account-related system information.
-  </p>
+            Example of Linux command-line usage to inspect account-related system information.
+          </p>
         </div>
 
-       <div class="screenshot-block">
-  <p><strong>User Account Creation and Management</strong></p>
-  <div class="screenshot-frame">
-    <img src="user-creation.png" alt="Creating a new user in Kali Linux using useradd">
-  </div>
-
-  <p class="muted" style="margin-top:10px;">
-    Demonstrates user account creation and basic administrative account management in Kali Linux.
-  </p>
-</div>
+        <div class="screenshot-block">
+          <p><strong>User Account Creation and Management</strong></p>
+          <div class="screenshot-frame">
+            <img src="user-creation.png" alt="Creating a new user in Kali Linux using useradd">
+          </div>
+          <p class="muted" style="margin-top:10px;">
+            Demonstrates user account creation and basic administrative account management in Kali Linux.
+          </p>
+        </div>
 
         <div class="screenshot-block">
-  <p><strong>Disk Management and Partition Configuration</strong></p>
-  <div class="screenshot-frame">
-    <img src="disk-management.png" alt="Disk partitioning and management in Kali Linux">
-  </div>
-
-  <p class="muted" style="margin-top:10px;">
-    Shows disk and partition management tasks performed in a Linux lab environment.
-  </p>
-</div>
+          <p><strong>Disk Management and Partition Configuration</strong></p>
+          <div class="screenshot-frame">
+            <img src="disk-management.png" alt="Disk partitioning and management in Kali Linux">
+          </div>
+          <p class="muted" style="margin-top:10px;">
+            Shows disk and partition management tasks performed in a Linux lab environment.
+          </p>
+        </div>
       </section>
 
       <section class="card" id="certifications">
         <h2>Certifications</h2>
         <p class="cert-line"><strong>CompTIA Security+ (SY0-701)</strong> — In Progress</p>
+        <div class="project-links">
+          <a class="resume-button" href="resume.pdf" target="_blank">View Resume</a>
+        </div>
       </section>
 
       <section class="card" id="contact">
@@ -576,6 +589,11 @@ i<!DOCTYPE html>
         <p>Email: <a href="mailto:hzuhr001@odu.edu">hzuhr001@odu.edu</a></p>
         <p>GitHub: <a href="https://github.com/ThisIsHamzah99" target="_blank">github.com/ThisIsHamzah99</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/hamzah-z-15b55317b/" target="_blank">linkedin.com/in/hamzah-z-15b55317b</a></p>
+
+        <div class="contact-links">
+          <a class="resume-button" href="resume.pdf" target="_blank">Download Resume</a>
+          <a class="project-button" href="mailto:hzuhr001@odu.edu">Contact Me</a>
+        </div>
       </section>
 
     </div>
