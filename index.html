@@ -306,120 +306,6 @@
       color: var(--muted);
     }
 
-    .impact-project {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      min-height: 430px;
-      padding: 24px;
-      overflow: hidden;
-    }
-
-    .impact-project::after {
-      content: "";
-      position: absolute;
-      right: -45px;
-      top: -45px;
-      width: 145px;
-      height: 145px;
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 50%;
-      box-shadow: 0 0 0 28px rgba(255,255,255,0.018);
-      pointer-events: none;
-    }
-
-    .impact-project.scamshield { --project-accent: #6ee7b7; }
-    .impact-project.safesteps { --project-accent: #f0a9bd; }
-    .impact-project.breachcoach { --project-accent: #4ee6d4; }
-    .impact-project.missionready { --project-accent: #f2c84b; }
-
-    .project-overline {
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      margin: 0 0 18px;
-      color: var(--project-accent);
-      font-size: 0.72rem;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .project-overline::before {
-      content: "";
-      width: 22px;
-      height: 2px;
-      background: var(--project-accent);
-    }
-
-    .impact-project .project-title {
-      align-items: flex-start;
-    }
-
-    .impact-project .project-title h3 {
-      max-width: 75%;
-      font-size: 1.45rem;
-      line-height: 1.2;
-    }
-
-    .live-status {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: #bfe7dc;
-      font-size: 0.72rem;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .live-status::before {
-      content: "";
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #4ade80;
-      box-shadow: 0 0 0 4px rgba(74,222,128,0.11);
-    }
-
-    .impact-summary {
-      margin: 17px 0 0;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    .project-proof {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin: 18px 0;
-    }
-
-    .project-proof span {
-      padding: 10px 11px;
-      border: 1px solid rgba(255,255,255,0.07);
-      border-radius: 9px;
-      background: rgba(7,16,31,0.36);
-      color: #dce8f5;
-      font-size: 0.76rem;
-    }
-
-    .project-proof strong {
-      display: block;
-      margin-bottom: 2px;
-      color: var(--project-accent);
-      font-size: 0.9rem;
-    }
-
-    .impact-project .project-links {
-      margin-top: auto;
-      padding-top: 8px;
-    }
-
-    .impact-project .project-button:first-child {
-      border-color: color-mix(in srgb, var(--project-accent) 48%, transparent);
-      background: color-mix(in srgb, var(--project-accent) 10%, transparent);
-    }
-
     .project:first-of-type {
       padding-top: 20px;
     }
@@ -564,12 +450,6 @@
         padding: 22px;
       }
     }
-
-    @media (max-width: 640px) {
-      .report-frame iframe {
-        height: 520px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -582,9 +462,9 @@
 
           <div class="name-block">
             <h1>Hamzah Zuhrah</h1>
-            <p class="subtitle">Cybersecurity Student | Kali Linux | CompTIA Security+ in Progress</p>
+            <p class="subtitle">Cybersecurity Student | Secure Systems &amp; Compliance | SOC &amp; GRC</p>
             <p class="muted" style="margin-top:10px; max-width:560px;">
-              Interested in cybersecurity, Linux-based system security, and practical security projects that strengthen real-world technical skills.
+              Building toward security operations through regulated public-safety systems, IT support, applied research, and security engineering.
             </p>
           </div>
         </div>
@@ -598,11 +478,9 @@
       </div>
 
       <p class="hero-summary">
-        Cybersecurity student at Old Dominion University with hands-on experience in Kali Linux, Linux administration,
-        networking, access control, and technical lab documentation. Focused on building practical security skills through
-        system configuration, command-line work, and security engineering projects, including a fully rebuilt Secure File
-        Transfer System and four public-interest cybersecurity web applications focused on scam prevention, survivor safety,
-        nonprofit incident response, and community cyber resilience.
+        Cybersecurity student at Old Dominion University with experience in secure public-safety operations, IT support,
+        compliance-focused workflows, Linux, network analysis, and Python security engineering. Currently working with
+        clearance-controlled state systems at NCDAC and researching encrypted DNS security and privacy with COVA CCI.
       </p>
     </div>
   </header>
@@ -610,6 +488,7 @@
   <nav>
     <div class="nav-inner">
       <a href="#about">About</a>
+      <a href="#experience">Experience &amp; Research</a>
       <a href="#skills">Skills</a>
       <a href="#learning">Currently Learning</a>
       <a href="#projects">Projects</a>
@@ -628,11 +507,40 @@
       <section class="card" id="about">
         <h2>About Me</h2>
         <p class="muted">
-          I am a cybersecurity student focused on building real technical skills in Linux, networking, system security,
-          and cybersecurity fundamentals. My portfolio highlights coursework, hands-on labs, and practical projects that
-          demonstrate my ability to work with command-line tools, user and permission management, and system configuration
-          in lab environments.
+          I am a cybersecurity student at Old Dominion University with experience spanning secure public-safety operations,
+          IT support, compliance-focused workflows, and security engineering. My work emphasizes access control, careful
+          handling of sensitive information, reliable documentation, defensive analysis, and clear communication in
+          high-responsibility environments.
         </p>
+      </section>
+
+      <section class="card" id="experience">
+        <h2>Experience &amp; Research</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <div class="project-title">
+              <h3>NC Department of Adult Correction</h3>
+              <span class="project-status">Current role</span>
+            </div>
+            <p class="muted"><strong>Telecommunicator | Special Operations &amp; Intelligence Unit (SOIU)</strong></p>
+            <p class="muted">
+              Use OPUS, OMNIXX, DCI, and multiple clearance-controlled state systems in a regulated public-safety
+              environment. Follow role-based access, identity-verification, confidentiality, records-handling, auditability,
+              and incident-escalation procedures while supporting time-critical operations.
+            </p>
+          </article>
+          <article class="project">
+            <div class="project-title">
+              <h3>Encrypted DNS Security &amp; Privacy</h3>
+              <span class="project-status">Ongoing research</span>
+            </div>
+            <p class="muted"><strong>Independent research opportunity | COVA CCI</strong></p>
+            <p class="muted">
+              Examining how DNS over HTTPS and DNS over TLS affect user privacy, network visibility, performance, and
+              defenders' ability to detect DNS-based threats, supported by a practical Wireshark demonstration.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="card" id="skills">
@@ -640,7 +548,7 @@
         <div class="tags">
           <span class="tag">Kali Linux</span>
           <span class="tag">Linux Command Line</span>
-          <span class="tag">User & Group Management</span>
+          <span class="tag">User &amp; Group Management</span>
           <span class="tag">File Permissions</span>
           <span class="tag">Shell Scripting</span>
           <span class="tag">Task Automation</span>
@@ -659,8 +567,14 @@
           <span class="tag">Security Testing</span>
           <span class="tag">Incident Response</span>
           <span class="tag">Threat Modeling</span>
-          <span class="tag">NIST CSF 2.0</span>
-          <span class="tag">Accessible Web Applications</span>
+          <span class="tag">Governance, Risk &amp; Compliance</span>
+          <span class="tag">Access Control</span>
+          <span class="tag">Auditability</span>
+          <span class="tag">OPUS</span>
+          <span class="tag">OMNIXX</span>
+          <span class="tag">DCI</span>
+          <span class="tag">Wireshark</span>
+          <span class="tag">Encrypted DNS</span>
         </div>
       </section>
 
@@ -668,17 +582,17 @@
         <h2>Currently Learning</h2>
         <ul>
           <li>CompTIA Security+ (SY0-701)</li>
-          <li>Linux system administration and file permissions</li>
-          <li>Secure file transfer and authentication concepts</li>
-          <li>Networking protocols and security fundamentals</li>
+          <li>SOC workflows, network visibility, and defensive monitoring</li>
+          <li>Governance, risk, compliance, and audit-ready documentation</li>
+          <li>Encrypted DNS security and privacy through COVA CCI research</li>
         </ul>
       </section>
 
       <section class="card" id="projects">
         <h2>Projects</h2>
         <p class="projects-intro">
-          Five completed projects that pair defensible security engineering with clear documentation, tested behavior,
-          and—where applicable—live tools designed to help real communities.
+          One focused security engineering project demonstrating authenticated encryption, secure transport, access
+          boundaries, audit logging, and tested failure handling.
         </p>
         <div class="projects-grid">
 
@@ -734,94 +648,6 @@
   </div>
 </article>
 
-          <article class="project impact-project scamshield">
-            <p class="project-overline">Public-interest app 01</p>
-            <div class="project-title">
-              <h3>ScamShield Community</h3>
-              <span class="live-status">Live</span>
-            </div>
-            <p class="impact-summary">
-              A privacy-first message triage tool that explains scam pressure tactics, credential requests,
-              risky payment methods, impersonation, and suspicious link structures without uploading user content.
-            </p>
-            <div class="project-proof">
-              <span><strong>Explainable</strong>weighted rule engine</span>
-              <span><strong>On-device</strong>no text transmission</span>
-              <span><strong>URL analysis</strong>7 warning classes</span>
-              <span><strong>Safer UX</strong>no false “safe” verdict</span>
-            </div>
-            <div class="project-links">
-              <a class="project-button" href="https://scamshield-community.szhamzah20.chatgpt.site" target="_blank" rel="noopener">Launch Live App</a>
-              <a class="project-button" href="https://github.com/ThisIsHamzah99/scamshield-community" target="_blank" rel="noopener">Source &amp; Threat Model</a>
-            </div>
-          </article>
-
-          <article class="project impact-project safesteps">
-            <p class="project-overline">Public-interest app 02</p>
-            <div class="project-title">
-              <h3>SafeSteps Digital Safety</h3>
-              <span class="live-status">Live</span>
-            </div>
-            <p class="impact-summary">
-              A survivor-centered, session-only technology safety planner covering account access, device monitoring,
-              location sharing, phone plans, smart-home systems, communications, and evidence preservation.
-            </p>
-            <div class="project-proof">
-              <span><strong>Session-only</strong>zero stored answers</span>
-              <span><strong>Quick exit</strong>button + keyboard</span>
-              <span><strong>Risk-aware</strong>escalation pause points</span>
-              <span><strong>8 domains</strong>prioritized planning</span>
-            </div>
-            <div class="project-links">
-              <a class="project-button" href="https://safesteps-digital-safety.szhamzah20.chatgpt.site" target="_blank" rel="noopener">Launch Live App</a>
-              <a class="project-button" href="https://github.com/ThisIsHamzah99/safesteps-digital-safety" target="_blank" rel="noopener">Source &amp; Safety Model</a>
-            </div>
-          </article>
-
-          <article class="project impact-project breachcoach">
-            <p class="project-overline">Public-interest app 03</p>
-            <div class="project-title">
-              <h3>BreachCoach</h3>
-              <span class="live-status">Live</span>
-            </div>
-            <p class="impact-summary">
-              A branching incident-response tabletop simulator for nonprofits, with ransomware, business-email
-              compromise, and donor-account takeover exercises built around real operational tradeoffs.
-            </p>
-            <div class="project-proof">
-              <span><strong>3 scenarios</strong>9 escalating injects</span>
-              <span><strong>27 choices</strong>scored outcomes</span>
-              <span><strong>4 dimensions</strong>resilience model</span>
-              <span><strong>Debrief</strong>printable review</span>
-            </div>
-            <div class="project-links">
-              <a class="project-button" href="https://breachcoach-nonprofit-ir.szhamzah20.chatgpt.site" target="_blank" rel="noopener">Launch Live App</a>
-              <a class="project-button" href="https://github.com/ThisIsHamzah99/breachcoach-nonprofit-ir" target="_blank" rel="noopener">Source &amp; Scenarios</a>
-            </div>
-          </article>
-
-          <article class="project impact-project missionready">
-            <p class="project-overline">Public-interest app 04</p>
-            <div class="project-title">
-              <h3>MissionReady Cyber</h3>
-              <span class="live-status">Live</span>
-            </div>
-            <p class="impact-summary">
-              A cybersecurity readiness planner for community organizations that converts twelve maturity questions
-              across all six NIST CSF 2.0 Functions into a prioritized 30–60–90 day action roadmap.
-            </p>
-            <div class="project-proof">
-              <span><strong>6 functions</strong>independent scores</span>
-              <span><strong>12 questions</strong>4 maturity states</span>
-              <span><strong>90-day plan</strong>deterministic ranking</span>
-              <span><strong>Private</strong>no organization data</span>
-            </div>
-            <div class="project-links">
-              <a class="project-button" href="https://community-cyber-readiness.szhamzah20.chatgpt.site" target="_blank" rel="noopener">Launch Live App</a>
-              <a class="project-button" href="https://github.com/ThisIsHamzah99/community-cyber-readiness" target="_blank" rel="noopener">Source &amp; Framework</a>
-            </div>
-          </article>
-
         </div>
       </section>
 
@@ -864,7 +690,7 @@
 
         <div class="two-col">
           <div>
-            <h3>Kali Linux & Command Line Usage</h3>
+            <h3>Kali Linux &amp; Command Line Usage</h3>
             <ul>
               <li>Used commands such as <code>grep</code>, <code>ls</code>, <code>cd</code>, and <code>pwd</code> to navigate and inspect Linux systems</li>
               <li>Managed users with commands such as <code>useradd</code> and <code>passwd</code></li>
